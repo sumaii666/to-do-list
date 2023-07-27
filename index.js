@@ -1,4 +1,6 @@
 var myInput = document.getElementById("myInput");
+var countNumber = document.getElementById("number");
+var counter = 0;
 
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
@@ -23,9 +25,18 @@ for (i = 0; i < close.length; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
+list.addEventListener('click', function(ev) 
+{
+  if (ev.target.tagName === 'LI') 
+  {
+    // if (ev.target.classList[0]==='checked') {
+    //   counter--;
+    // }else{
+    //   counter++;
+    // }
+    ev.target.classList[0]==='checked' ? counter-- : counter++;
     ev.target.classList.toggle('checked');
+    countNumber.textContent = counter;
   }
 }, false);
 
@@ -36,7 +47,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("UY MI REYNA, write somentime");
+    alert("UY MI REYNA :0, you need write somenting");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
@@ -56,6 +67,8 @@ function newElement() {
   }
 }
 
+
+
 // Execute a function when the user presses a key on the keyboard
 myInput.addEventListener("keypress", function(event) 
 {
@@ -67,3 +80,5 @@ myInput.addEventListener("keypress", function(event)
     }
 
 });
+
+    

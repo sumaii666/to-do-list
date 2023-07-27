@@ -1,7 +1,7 @@
 /*change the backtheme (body)*/
 body{
 
-    background-image: url(img/wallhaven-w8zpdp_1920x1080.png);
+  background-color: #1b263b;
 }
 
 
@@ -25,6 +25,7 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-bottom: 10px;
   }
   
   /* Set all odd list items to a different color */
@@ -34,7 +35,7 @@ body{
   
   /* Darker background-color on hover */
   ul li:hover {
-    background: #0fbd3e;
+    background: #84a98c;
   }
   
   /* When clicked on, add a background color and strike out text */
@@ -48,7 +49,7 @@ body{
   ul li.checked::before {
     content: '';
     position: absolute;
-    border-color: #fff;
+    border-color: #efe1e1;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
@@ -73,9 +74,9 @@ body{
   
   /* Style the header */
   .header {
-    background-color: #edf2f4;
+    background-color: #354f52;
     padding: 30px 40px;
-    color: rgb(0, 0, 0);
+    color: #e7e4e4;
     text-align: center;
   }
   
@@ -101,18 +102,24 @@ body{
   .addBtn {
     padding: 10px;
     width: 25%;
-    background: #19bbc7;
-    color: #ffffff;
+    background: #d1d1d1;
+    color: #0a4e19;
     float: left;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
   }
-  
+   
   .addBtn:hover {
-    background-color: #0086f3;
+    background-color: #84a98c;
   }
-
+  .count_container
+  {
+      color: #fff;
+      font-size: 20px;
+      margin-top: 30px;
+      text-align: justify;
+  }
   
